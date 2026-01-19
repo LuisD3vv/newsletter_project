@@ -222,6 +222,10 @@ button:hover {
   background-color: red !important;
   transition: background-color ease .2s;
 }
+.succmail {
+  display: inline-block;
+  color: unset;
+}
 /* =======================
   MEDIA QUERY
 ======================= */
