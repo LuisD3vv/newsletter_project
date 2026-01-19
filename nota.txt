@@ -1,0 +1,67 @@
+En javascript existen dos formas para trabajar con expresiones regulares
+
+1 El objeto REgExp
+2 Los metodos de strings:
+- match
+- test
+- replace
+
+busqueda literal
+
+/hola/
+
+clases de caracteres, que buscan por cantidad y tipop
+
+\d 0-9
+\w letra, numero o _
+\s espacio
+. cualquier caracter
+
+ejemplo
+
+/ \d / - hay algun numero aqui?
+
+es literalmente como el ejemplo del hola, si te dijas bien.
+
+ahora con cuantificadores
+
++ una o mas
+* cero o mas
+? cero o una
+{n} exactamente n
+{n,m} desde n hasta m o entre n y m
+
+ejemplo
+
+/ \d{1,10} / un numero uno o 10 numero seguidos
+
+
+precision 
+
+^ inicio del texto
+$ final del texto
+
+/ ^\d+$ /  solo numeros
+
+
+esto o aquello
+
+/perro|gato/
+
+cuentas con flags/modificadores
+
+i ignorar mayusculas
+g busca todas las coindicencias
+m multiples lineas
+
+/hola/g - output Hola
+
+
+cuando esta un caracter suelto, en la expresion como tal debe aparecer si o si en la expresion como  este ejemplo
+
+/^\w+@\w+\.\w+$/
+
+el punto y el arroba son obligatorios sin importar que haya antes o depues de ellos.
+
+
+son una herraminetas increble para el filtrado de texto, pero tambien para el analisis de habitos y detectar patrones
