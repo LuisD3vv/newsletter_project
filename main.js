@@ -18,13 +18,15 @@ function validar() {
       email.removeAttribute("class", "error");
     }, 3000);
   } else {
-    if (emailRegex.test(extraerValor(email))) {
+   alert("Formato de correo incorrecto (e.g algo@mail.com)")
+  }
+  
+   if (emailRegex.test(extraerValor(email))) {
         const Guardarcorreo = extraerValor(email);
         // guardar objetos y strings temporalmente, con clave y valor
       localStorage.setItem("correo", Guardarcorreo); // con set los guardamos en eset caso string
       window.location.href = "success.html"; 
     }
-  }
 }
 
 function dismiss() {

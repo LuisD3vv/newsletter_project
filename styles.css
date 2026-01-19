@@ -141,7 +141,7 @@ span {
 }
 #email:focus {
   outline: 2px solid green;
-  outline-offset: 1px;
+  outline-offset:2px;
   border-color: white;
   background-color: #22222235;
 }
@@ -160,8 +160,8 @@ span {
 ======================= */
 button {
   width: 100%;
-  padding: 1.2rem;
-  font-size: 1.1rem;
+  padding: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
   color: var(--White);
@@ -177,14 +177,18 @@ button:hover {
               0 0 10px rgba(255, 94, 0, 0.6);
 }
 
+button:active {
+  transform: scale(.98);
+}
 /* =======================
    SUCCESS MESSAGE
 ======================= */
 .success_cont {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   width: 32rem;
+  height: max-content;
   margin: 10rem auto;
   padding: 3rem;
   gap: 1rem;
@@ -203,17 +207,18 @@ button:hover {
 .succest_cont_text {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .succest_cont_text h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: var(--Blue_700);
 }
 
 .succest_cont_text p {
+  font-size: 1.3rem;
   color: var(--Blue_700);
-  line-height: 1.7rem;
+  line-height: 1.5rem;
 }
 .success_back_button {
   transition: background-color ease .2s;
@@ -280,4 +285,18 @@ button:hover {
   .form_text_description {
     font-size: 1.4rem;
   }
+  .success_cont {
+    justify-content: space-evenly;
+    margin: auto;
+    height:70dvh;
+    width:100%;
+    border-radius: unset;
+    border-bottom-left-radius:3rem;
+    border-bottom-right-radius:3rem;
+
+  }
+
+.succest_cont_image {
+  width:5rem;
+}
 }
